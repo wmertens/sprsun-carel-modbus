@@ -1,0 +1,16 @@
+{
+  "name": "t",
+  "version": "1.0.0",
+  "description": "",
+  "main": "t.js",
+  "dependencies": {
+    "modbus-serial": "^8.0.5",
+    "serialport": "^9.2.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
