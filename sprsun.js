@@ -55,7 +55,7 @@ const knownRegs = {
 	13: {name: 'DT_AuxComp', min: 0, max: 999},
 	14: {name: 'AuxHeatSetP_Exterior', real: true},
 	15: {name: 'PmpDeltaTempSetP', real: true},
-	19: {name: 'unknown-reg-19 600-700'},
+	19: {name: 'unknown-reg-19 600-700'}, // seen 780 once
 
 	182: {name: 'GeneralMng.YearIn', min: 0, max: 99},
 	183: {name: 'GeneralMng.MonthIn', min: 0, max: 12},
@@ -102,6 +102,8 @@ const knownRegs = {
 
 	215: {name: 'uniton_mode', enum: ['cooling', 'heating', 'hot water']},
 	216: {name: 'Temp_Target', real: true},
+	263: {name: 'nightmode-max-rps-compressor', real: true}, // max 70 it seems, min ?
+	264: {name: 'nightmode-max-rpm-fan', real: true}, // max 800
 	320: {name: 'unknown_320_0 or 1'},
 	333: {name: 'unknown_333_compressor'},
 	334: {name: 'unknown_334_c1', real: true},
