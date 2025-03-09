@@ -5,7 +5,7 @@
   "main": "t.js",
   "dependencies": {
     "modbus-serial": "^8.0.5",
-    "serialport": "^9.2.5"
+    "serialport": "^13"
   },
   "devDependencies": {},
   "scripts": {

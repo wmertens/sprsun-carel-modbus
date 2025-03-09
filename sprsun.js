@@ -14,6 +14,7 @@ const knownDI = {
 	10: {name: 'Outputs.DoutVal_6'},
 	11: {name: 'Outputs.DoutVal_7'},
 	12: {name: 'Outputs.DoutVal_8'},
+	141: {name: 'unknown_di_141 overpressure fault?'},
 	151: {name: 'unknown_di_151 no idea'},
 	178: {name: 'unknown_di_178 pump-related'},
 	179: {name: 'unknown_di_179 fan-related'},
@@ -32,6 +33,12 @@ const knownCoils = {
 	// Turn the unit on/off true/false
 	40: {name: 'OnOffUnitMng.KeybOnOff'},
 }
+
+// No idea where to read these
+// After an overpressure alarm dismissal I got
+//    'Outputs.DoutVal_7': false,                                           |         'Outputs.DoutVal_7': true,
+//	    'unknown-di-141': true,                                               <
+// so 141 is either overpressure alarm or generic fault
 
 const alarms = {
 	1: 'Too many mem writings',
